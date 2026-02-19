@@ -1,0 +1,33 @@
+layoutlm:
+  model_name: "microsoft/layoutlmv3-base"
+  max_seq_length: 512
+  label_list:
+    - "O"
+    - "B-VENDOR"
+    - "I-VENDOR"
+    - "B-AMOUNT"
+    - "I-AMOUNT"
+    - "B-DATE"
+    - "I-DATE"
+    - "B-INVOICE_NUM"
+    - "I-INVOICE_NUM"
+    - "B-LINE_ITEM"
+    - "I-LINE_ITEM"
+    - "B-TAX"
+    - "I-TAX"
+    - "B-TOTAL"
+    - "I-TOTAL"
+
+donut:
+  model_name: "naver-clova-ix/donut-base-finetuned-cord-v2"
+  max_length: 768
+  task_prompt: "<s_cord-v2>"
+
+ocr:
+  tesseract_config: "--psm 6 --oem 3"
+  confidence_threshold: 60
+  language: "eng"
+
+processing:
+  max_image_size: 2048
+  dpi: 300
