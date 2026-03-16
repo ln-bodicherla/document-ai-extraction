@@ -1,58 +1,77 @@
-# Python
+
 __pycache__/
-*.py[cod]
-*$py.class
-*.so
-*.egg-info/
-*.egg
-dist/
-build/
-eggs/
-*.whl
-
-# Virtual environments
-venv/
-env/
+!.env.example
+!.env.sample
+.build/
+.DS_Store
+.eggs/
+.env
+.env.*
+.env.local
 .env/
-.venv/
-
-# IDE
-.vscode/
 .idea/
-*.swp
-*.swo
-*~
-
-# Model artifacts
-models/
-checkpoints/
+.ipynb_checkpoints/
+.swiftpm/
+.venv/
+.vscode/
+*.app
+*.bin
+*.db
+*.db-shm
+*.db-wal
+*.egg
+*.egg-info/
+*.ipa
+*.jpeg
+*.jpg
+*.key
+*.log
+*.onnx
+*.pdf
+*.pem
+*.png
 *.pt
 *.pth
-*.bin
-*.onnx
+*.py[cod]
+*.pyc
 *.safetensors
-
-# Data
-data/
-uploads/
-outputs/
-*.pdf
-*.png
-*.jpg
-*.jpeg
+*.secret
+*.so
+*.sqlite
+*.sqlite3
+*.swo
+*.swp
 *.tiff
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Logs
-*.log
-logs/
-
-# Jupyter
-.ipynb_checkpoints/
-
+*.whl
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+*~
+*$py.class
+# Build
+# Data
+# Databases
+# Dependencies
 # Environment variables
-.env
-.env.local
+# IDE
+# Jupyter
+# Logs
+# Model artifacts
+# OS
+# Python
+# Secrets
+# Virtual environments
+build/
+checkpoints/
+credentials*
+data/
+DerivedData/
+dist/
+eggs/
+env/
+logs/
+models/
+node_modules/
+outputs/
+Thumbs.db
+uploads/
+venv/
