@@ -44,7 +44,7 @@ Extractor     Extractor
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/document-ai-extraction.git
+git clone https://github.com/ln-bodicherla/document-ai-extraction.git
 cd document-ai-extraction
 
 # Create virtual environment
@@ -142,15 +142,9 @@ document-ai-extraction/
 └── README.md
 ```
 
-## Performance
+## Evaluation
 
-Benchmarked on internal invoice dataset (1,200 documents):
-
-| Model | Precision | Recall | F1 Score |
-|-------|-----------|--------|----------|
-| LayoutLMv3 | 0.91 | 0.88 | 0.89 |
-| Donut | 0.87 | 0.90 | 0.88 |
-| Ensemble | 0.93 | 0.91 | 0.92 |
+No benchmark results or evaluation data are included in this repository. The default configuration loads the public `microsoft/layoutlmv3-base` checkpoint, which needs fine-tuning on labeled documents before its token-classification output is meaningful (no training code is included), and the public `naver-clova-ix/donut-base-finetuned-cord-v2` checkpoint, which was fine-tuned on receipts (CORD).
 
 ## License
 
